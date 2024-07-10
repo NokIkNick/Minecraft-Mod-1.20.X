@@ -23,10 +23,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GARNET.get());
                         pOutput.accept(ModItems.CRUSHED_GARNET.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.CRYSTALLISED_COAL.get());
+
+                        //FOODS:
+                        pOutput.accept(ModItems.BANANA.get());
 
                         //BLOCKS:
                         pOutput.accept(ModBlocks.GARNET_BLOCK.get());
                         pOutput.accept(ModBlocks.GARNET_ORE.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
 

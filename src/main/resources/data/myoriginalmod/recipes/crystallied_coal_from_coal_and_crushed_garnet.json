@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GGG",
+    "GCG",
+    "GGG"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "G": {
+        "item": "myoriginalmod:crushed_garnet"
+    }
+  },
+  "result": {
+    "item": "myoriginalmod:crystallised_coal"
+  }
+}

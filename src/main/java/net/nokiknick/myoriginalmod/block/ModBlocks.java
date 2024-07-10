@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nokiknick.myoriginalmod.MyOriginalMod;
+import net.nokiknick.myoriginalmod.block.custom.SoundBlock;
 import net.nokiknick.myoriginalmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -28,6 +29,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> GARNET_ORE = registerBlock("garnet_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).sound(SoundType.AMETHYST)
                     .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
+
+
 
     //Helper methods:
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

@@ -16,6 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nokiknick.myoriginalmod.block.ModBlocks;
 import net.nokiknick.myoriginalmod.item.ModCreativeModeTabs;
+import net.nokiknick.myoriginalmod.item.ModFoods;
 import net.nokiknick.myoriginalmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -36,6 +37,7 @@ public class MyOriginalMod
         ModItems.Register(modEventBus);
 
         ModBlocks.register(modEventBus);
+
 
 
         modEventBus.addListener(this::commonSetup);
