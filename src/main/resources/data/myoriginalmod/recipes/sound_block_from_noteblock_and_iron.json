@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "ISI",
+    "III"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:note_block"
+    },
+    "I": {
+        "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "myoriginalmod:sound_block"
+  }
+}

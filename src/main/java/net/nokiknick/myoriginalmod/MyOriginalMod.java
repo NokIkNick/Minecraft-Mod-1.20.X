@@ -1,6 +1,7 @@
 package net.nokiknick.myoriginalmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,6 +14,10 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.nokiknick.myoriginalmod.block.ModBlocks;
+import net.nokiknick.myoriginalmod.item.ModCreativeModeTabs;
+import net.nokiknick.myoriginalmod.item.ModFoods;
+import net.nokiknick.myoriginalmod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -26,6 +31,14 @@ public class MyOriginalMod
     public MyOriginalMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.Register(modEventBus);
+
+        ModBlocks.register(modEventBus);
+
+
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,8 +56,7 @@ public class MyOriginalMod
     }
 
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
 

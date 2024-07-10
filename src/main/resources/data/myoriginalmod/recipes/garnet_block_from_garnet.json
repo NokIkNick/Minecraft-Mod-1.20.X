@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "myoriginalmod:garnet"
+    }
+  },
+  "result": {
+    "item": "myoriginalmod:garnet_block"
+  }
+}

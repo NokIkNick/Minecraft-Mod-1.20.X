@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "myoriginalmod:garnet"
+  },
+  "result": "myoriginalmod:crushed_garnet"
+}

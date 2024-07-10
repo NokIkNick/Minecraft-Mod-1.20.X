@@ -1,0 +1,16 @@
+{
+  "item.myoriginalmod.garnet": "Garnet",
+    "item.myoriginalmod.crushed_garnet": "Crushed Garnet",
+  "item.myoriginalmod.metal_detector": "Metal Detector",
+  "item.myoriginalmod.banana": "Banana",
+  "item.myoriginalmod.crystallised_coal": "Crystallised Coal",
+
+  "block.myoriginalmod.garnet_block": "Block of Garnet",
+  "block.myoriginalmod.garnet_ore": "Garnet Ore",
+  "block.myoriginalmod.sound_block": "Sound Block",
+
+  "tooltip.myoriginalmod.metal_detector.tooltip": "Finds valuable ores underground.",
+  "block.myoriginalmod.sound_block.tooltip": "Makes the sounds of the block that it's placed upon.",
+
+  "creativetab.my_original_mod_tab": "My Original Mod"
+}
