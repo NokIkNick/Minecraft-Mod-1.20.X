@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         //ITEMS:
                         pOutput.accept(ModItems.GARNET.get());
                         pOutput.accept(ModItems.CRUSHED_GARNET.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
 
                         //BLOCKS:
                         pOutput.accept(ModBlocks.GARNET_BLOCK.get());
