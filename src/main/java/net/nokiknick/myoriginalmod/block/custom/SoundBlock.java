@@ -43,6 +43,12 @@ public class SoundBlock extends Block {
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
 
+        Block blockBelow = pLevel.getBlockState(pPos.below()).getBlock();
+
+        if(blockBelow.getDescriptionId().equals("block.myoriginalmod.sound_block")){
+            blockBelow.use(pState, pLevel, pPos.below(), pPlayer, pHand, pHit);
+            return InteractionResult.SUCCESS;
+        }
 
         SoundEvent soundEvent = pLevel.getBlockState(pPos.below()).getBlock().getSoundType(pLevel.getBlockState(pPos.below())).getPlaceSound();
 
